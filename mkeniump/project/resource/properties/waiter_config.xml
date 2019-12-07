@@ -1,0 +1,10 @@
+<waiter>
+
+    <!--Time in seconds-->
+    <time>
+        <defect>20</defect>
+        <long>40</long>
+        <sort>5</sort>
+    </time>
+
+</waiter>
