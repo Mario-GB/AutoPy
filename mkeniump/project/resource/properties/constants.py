@@ -2,11 +2,12 @@
 CHROME = 'Chrome'
 FIREFOX = 'Firefox'
 # routs
-ROUT_PROPERTIES = './resource/properties/'
-ROUT_DRIVERS = './resource/drivers/'
+ROUT_PROPERTIES = './mkeniump/project/resource/properties/'
+ROUT_DRIVERS = './mkeniump/project/resource/drivers/'
 # file's name
 FILE_NAVIGATOR_CONFIG = 'navigator_config.xml'
 FILE_WAITER_CONFIG = 'waiter_config.xml'
+FILE_FIREFOX_DRIVER = 'geckodriver.exe'
 # navigator_config constants
 NODE_DRIVER = 'driver'
 NODE_SCREEN = 'screen'

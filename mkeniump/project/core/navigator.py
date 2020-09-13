@@ -1,14 +1,8 @@
+import os
 from selenium import webdriver
 from mkeniump.project.utils import log
 from mkeniump.project.utils.properties import get_navigator_properties
-from mkeniump.project.resource.properties.constants import \
-    ROUT_DRIVERS,\
-    NODE_DRIVER,\
-    ATTRIBUTE_HEIGHT,\
-    ATTRIBUTE_WIDTH,\
-    CHROME,\
-    FIREFOX,\
-    ERROR_NAVIGATOR
+from mkeniump.project.resource.properties.constants import *
 
 
 # Get a singlenton navigator
@@ -45,6 +39,7 @@ class _Navigator:
         if navigator_properties.get(NODE_DRIVER) == CHROME:
             self.__driver = webdriver.Chrome(ROUT_DRIVERS)
         elif navigator_properties.get(NODE_DRIVER) == FIREFOX:
+            print(os.listdir(ROUT_DRIVERS))
             self.__driver = webdriver.Firefox(ROUT_DRIVERS)
         else:
             log.error(ERROR_NAVIGATOR)
